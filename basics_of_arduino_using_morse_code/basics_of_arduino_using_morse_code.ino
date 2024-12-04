@@ -8,7 +8,7 @@ void setup() {
 }
 
 
-char name[] = "L";
+char name[] = "Z";
 int morse[26][4] = {
   { 2, 1 },
   { 1, 2, 2, 2 },
@@ -41,29 +41,26 @@ int morse[26][4] = {
 
 
 void loop() {
-  for (int i = 0; i < sizeof(name) - 0; i++) {
+  for (int i = 0; i < sizeof(name); i++) {
     int* v = morse[int(toupper(name[i])) - 66];
     for (int j = 0; j < sizeof(v); j++) {
-      switch (v[j]) {
-        case 2:
-          digitalWrite(LED_RED, HIGH);
-          delay(100);
-          digitalWrite(LED_RED, LOW);
-          break;
-        case 1:
-          digitalWrite(LED_BLUE, HIGH);
-          delay(100);
-          digitalWrite(LED_BLUE, LOW);
-          break;
+      if (v[j] == 2) {
+        digitalWrite(LED_RED, HIGH);
+        delay(300);
+        digitalWrite(LED_RED, LOW);
+      } else if (v[j] == 1) {
+        digitalWrite(LED_BLUE, HIGH);
+        delay(300);
+        digitalWrite(LED_BLUE, LOW);
       }
-      delay(100);
+      delay(300);
     }
-    delay(100);
+    delay(300);
   }
   digitalWrite(LED_RED, HIGH);
   digitalWrite(LED_BLUE, HIGH);
   delay(1000);
   digitalWrite(LED_RED, LOW);
   digitalWrite(LED_BLUE, LOW);
-  delay(100);
+  delay(300);
 }
