@@ -3,7 +3,13 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Users/ble1/.platformio/packages/framework-arduinorenesas-uno/variants/UNOWIFIR4/includes/ra/fsp/inc/api",
+                "C:\\Users\\ble1\\.platformio\\packages\\framework-arduinorenesas-uno\\cores\\arduino",
+                "C:\\Users\\ble1\\.platformio\\packages\\framework-arduinorenesas-uno\\libraries",
+                "C:\\Users\\ble1\\.platformio\\packages\\framework-arduinorenesas-uno\\variants\\UNOWIFIR4\\includes\\ra_cfg\\fsp_cfg\\bsp",
+                "C:\\Users\\ble1\\.platformio\\packages\\framework-arduinorenesas-uno\\variants\\MINIMA\\includes\\ra\\fsp\\inc",
+                "C:\\Users\\ble1\\.platformio\\packages\\framework-arduinorenesas-uno\\variants\\UNOWIFIR4\\includes\\"
             ],
             "defines": [
                 "_DEBUG",

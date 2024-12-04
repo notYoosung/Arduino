@@ -1,66 +1,51 @@
-#define LED_RED 12
-#define LED_BLUE 11
-void setup() {
-  pinMode(LED_RED, OUTPUT);
-  digitalWrite(LED_RED, LOW);
-  pinMode(LED_BLUE, OUTPUT);
-  digitalWrite(LED_BLUE, LOW);
+/*
+ * https:
+ * https:
+ *
+
+
+
+Input - serial text :
+  check size ( == 12)
+  check contents (0 || 1)
+
+Input - 2 button :
+  A :
+    convert input to hex
+  B :
+    convert input to dec
+
+Display :
+  converted input
+
+ */
+#include "../../../../.platformio/packages/framework-arduinorenesas-uno/libraries/HID/HID.h"
+#include "../../../../.platformio/packages/framework-arduinorenesas-uno/cores/arduino/Arduino.h"
+char input[] = "";
+bool isInputValid = false;
+int inputLen = 0
+
+void setup()
+{
+  Serial.begin(9600);
 }
 
+void loop()
+{
 
-char name[] = "Z";
-int morse[26][4] = {
-  { 2, 1 },
-  { 1, 2, 2, 2 },
-  { 1, 2, 1, 2 },
-  { 1, 2, 2 },
-  { 2 },
-  { 2, 2, 1, 2 },
-  { 1, 1, 2 },
-  { 2, 2, 2, 2 },
-  { 2, 2 },
-  { 2, 1, 1, 1 },
-  { 1, 2, 1 },
-  { 2, 1, 2, 2 },
-  { 1, 1 },
-  { 1, 2 },
-  { 1, 1, 1 },
-  { 2, 1, 1, 2 },
-  { 1, 1, 2, 1 },
-  { 2, 1, 2 },
-  { 2, 2, 2 },
-  { 1 },
-  { 2, 2, 1 },
-  { 2, 2, 2, 1 },
-  { 2, 1, 1 },
-  { 1, 2, 2, 1 },
-  { 1, 2, 1, 1 },
-  { 1, 1, 2, 2 },
-};
+  Serial.println("Enter 12 digit binary: ");
+  input = Serial.readString();
 
-
-
-void loop() {
-  for (int i = 0; i < sizeof(name); i++) {
-    int* v = morse[int(toupper(name[i])) - 66];
-    for (int j = 0; j < sizeof(v); j++) {
-      if (v[j] == 2) {
-        digitalWrite(LED_RED, HIGH);
-        delay(300);
-        digitalWrite(LED_RED, LOW);
-      } else if (v[j] == 1) {
-        digitalWrite(LED_BLUE, HIGH);
-        delay(300);
-        digitalWrite(LED_BLUE, LOW);
-      }
-      delay(300);
+  while (!isInputValid)
+  {
+    for (auto x : input)
+    {
+      Serial.println(x)
     }
-    delay(300);
+
+
+  while (Serial.available() == 0)
+  {
   }
-  digitalWrite(LED_RED, HIGH);
-  digitalWrite(LED_BLUE, HIGH);
-  delay(1000);
-  digitalWrite(LED_RED, LOW);
-  digitalWrite(LED_BLUE, LOW);
-  delay(300);
+  height = Serial.parseFloat();
 }
