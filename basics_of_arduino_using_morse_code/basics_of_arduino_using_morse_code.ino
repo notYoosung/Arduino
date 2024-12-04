@@ -1,13 +1,15 @@
-#define LED_PIN 12
+#define LED_RED 12
+#define LED_BLUE 11
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  digitalWrite(LED_PIN, HIGH);
-  digitalWrite(LED_BUILTIN, LOW);
+  pinMode(LED_RED, OUTPUT);
+  digitalWrite(LED_RED, LOW);
+  pinMode(LED_BLUE, OUTPUT);
+  digitalWrite(LED_BLUE, LOW);
 }
 
 
-char name[] = "BL";
-int morse[26][8] = {
+char name[] = "L";
+int morse[26][4] = {
   { 2, 1 },
   { 1, 2, 2, 2 },
   { 1, 2, 1, 2 },
@@ -39,24 +41,29 @@ int morse[26][8] = {
 
 
 void loop() {
-  for (int i = 0; i < sizeof(name) - 1; i++) {
+  for (int i = 0; i < sizeof(name) - 0; i++) {
     int* v = morse[int(toupper(name[i])) - 66];
-    for (int j = 0; j < sizeof(v) - 1; j++) {
-      digitalWrite(LED_BUILTIN, HIGH);
+    for (int j = 0; j < sizeof(v); j++) {
       switch (v[j]) {
         case 2:
+          digitalWrite(LED_RED, HIGH);
           delay(100);
+          digitalWrite(LED_RED, LOW);
           break;
         case 1:
-          delay(300);
+          digitalWrite(LED_BLUE, HIGH);
+          delay(100);
+          digitalWrite(LED_BLUE, LOW);
           break;
       }
-      digitalWrite(LED_BUILTIN, LOW);
       delay(100);
     }
-    delay(5000);
+    delay(100);
   }
-  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(LED_RED, HIGH);
+  digitalWrite(LED_BLUE, HIGH);
   delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(LED_RED, LOW);
+  digitalWrite(LED_BLUE, LOW);
+  delay(100);
 }
