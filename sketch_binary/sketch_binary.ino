@@ -2,7 +2,7 @@
  * https:
  * https:
  *
-
+*/
 
 
 Input - serial text :
@@ -42,7 +42,7 @@ void loop()
     {
       Serial.println(x)
     }
-
+  }
 
   while (Serial.available() == 0)
   {
