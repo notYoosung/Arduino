@@ -2,7 +2,6 @@
  * https:
  * https:
  *
-*/
 
 
 Input - serial text :
@@ -19,33 +18,49 @@ Display :
   converted input
 
  */
-#include "../../../../.platformio/packages/framework-arduinorenesas-uno/libraries/HID/HID.h"
-#include "../../../../.platformio/packages/framework-arduinorenesas-uno/cores/arduino/Arduino.h"
-char input[] = "";
+String input = "";
 bool isInputValid = false;
-int inputLen = 0
+int inputLen = 0;
+
+
 
 void setup()
 {
   Serial.begin(9600);
-}
+};
 
 void loop()
 {
 
-  Serial.println("Enter 12 digit binary: ");
-  input = Serial.readString();
 
   while (!isInputValid)
   {
-    for (auto x : input)
+    Serial.println("Enter 12 digit binary: ");
+    while (Serial.available() == 0)
     {
-      Serial.println(x)
+    }
+    input = Serial.readString();
+    Serial.print("Input: ");
+    Serial.println(input);
+    inputLen = input.length();
+    isInputValid = true;
+    if 
+    for (int i = 0; i < inputLen - 1; ++i)
+    {
+      char x = input[i];
+      Serial.print("V: ");
+      Serial.println(x);
+      if (x != '0' && x != '1')
+      {
+        Serial.println("false");
+        isInputValid = false;
+      }
+    }
+    if (isInputValid)
+    {
+      Serial.println("valid");
+      break;
     }
   }
 
-  while (Serial.available() == 0)
-  {
-  }
-  height = Serial.parseFloat();
 }
