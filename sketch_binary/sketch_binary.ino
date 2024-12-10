@@ -42,24 +42,29 @@ void loop()
     input = Serial.readString();
     Serial.print("Input: ");
     Serial.println(input);
-    inputLen = input.length();
-    isInputValid = true;
-    if 
-    for (int i = 0; i < inputLen - 1; ++i)
+    inputLen = input.length() - 1;
+    if (inputLen == 12)
     {
-      char x = input[i];
-      Serial.print("V: ");
-      Serial.println(x);
-      if (x != '0' && x != '1')
+      isInputValid = true;
+      for (int i = 0; i < inputLen; ++i)
       {
-        Serial.println("false");
-        isInputValid = false;
+        char x = input[i];
+        Serial.print("V: ");
+        Serial.println(x);
+        if (x != '0' && x != '1')
+        {
+          Serial.println("false");
+          isInputValid = false;
+        }
       }
-    }
-    if (isInputValid)
+      if (isInputValid)
+      {
+        Serial.println("valid");
+      }
+    } else
     {
-      Serial.println("valid");
-      break;
+      Serial.print("Invalid input length: ");
+      Serial.println(inputLen);
     }
   }
 
