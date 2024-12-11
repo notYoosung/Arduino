@@ -9,31 +9,41 @@ Write about your overall experiences in this class. Please submit a reflection d
 
 
 Section One
-Reflect on your experiences in this course. How have your views and assumptions about being an engineer changed (or been confirmed)? Describe experiences that you have had in this course that have either changed or confirmed your views about what engineering is or how engineering is done. 
+    Reflect on your experiences in this course. How have your views and assumptions about being an engineer changed (or been confirmed)? Describe experiences that you have had in this course that have either changed or confirmed your views about what engineering is or how engineering is done. 
 
+        I believe that being an engineer is a viable prospect, especially with the seemingly boundless range of 
 
 
 Section Two
-Do you intend to continue to study engineering?
+    Do you intend to continue to study engineering?
+
+        I may pursue engineering. It is a useful field for work, and it has practical uses. The biomedical engineering field seems prospective as it provides careers with practicality and interest. It's also a rapidly growing career with some projections predicting up to a 10% increase
+
+    If you intend to continue to study engineering: Describe experiences you have had this semester that motivate you to continue studying engineering. What experiences are you looking forward to as an engineering student? Are you switching to a different engineering major? If yes—what experiences have motivated this choice? If you plan to remain in the same major, what experiences have motivated this choice?
+
+        This semester has shown quite a few ways in which data can be used. 
 
 
+    If you do not intend to continue to study engineering:  What major are you now exploring? Describe any experiences (in this class, in other classes, or outside of class) that you have had this semester that motivated you to explore a different major. How might your experiences from this semester help you on your new path?
 
-If you intend to continue to study engineering: Describe experiences you have had this semester that motivate you to continue studying engineering. What experiences are you looking forward to as an engineering student? Are you switching to a different engineering major? If yes—what experiences have motivated this choice? If you plan to remain in the same major, what experiences have motivated this choice?
-
-If you do not intend to continue to study engineering:  What major are you now exploring? Describe any experiences (in this class, in other classes, or outside of class) that you have had this semester that motivated you to explore a different major. How might your experiences from this semester help you on your new path?
+        While engineering  This semester has given quite a bit of experience in working with spreadsheets and utilities like Octave and Arduinos. This 
 
 
 
 Section Three
-What was the most rewarding experience that you had in this class? Describe this experience in detail. What did you learn from it? How did you learn it? Why did this learning matter? What will you do with what you learned in this experience?
-
-One of my most rewarding experiences was with 
-
-What was the most challenging experience that you had in this class? Describe this experience in detail. What did you learn from it? How did you learn it? Why did this learning matter? What will you do with what you learned in this experience?
+    What was the most rewarding experience that you had in this class? Describe this experience in detail. What did you learn from it? How did you learn it? Why did this learning matter? What will you do with what you learned in this experience?
+        
+        One of my most rewarding experiences was with creating functioning projects which could do things such as display data and delete functions which are about algoritmns 
+    
+    What was the most challenging experience that you had in this class? Describe this experience in detail. What did you learn from it? How did you learn it? Why did this learning matter? What will you do with what you learned in this experience?
+        
+        One of the most challenging experiences was in the cybersecurity project with data types and type conversions to both manipulate data and convert to an excel sheet with Octave's xlsxwrite. Although it ended up being unnecessary for the project, 
 
 
 Section Four
-What advice do you have for improving the course? What would you have liked to spend more or less time on during the semester? Are there any topics that should have been included?
+    What advice do you have for improving the course? What would you have liked to spend more or less time on during the semester? Are there any topics that should have been included?
 
-
+    While the differences between Octave and Matlab were relatively few, there were some cases where the function was better than the deleted math. However, there are some things which craeted math. However, theree are 
+        
+        I think that there could've been some topics on combining the use of Excel, Octave, and/or Arduino microprocessers. Excel and Octave/Matlab are rather strongly linked and could be used as a demonstration on how to use data. With the Arduinos, Excel and Octave can be integrated with the LED array to have dynamic displays such as bar graphs (in the case of displaying columns of measured data) or status displays (which could change in volume or frequency of oscillating displays to reflect a measurement). Matrices in Octave can also assist with manipulating a large array of inputs and outputs on a breadboard or soldered circuits. Excel, especially with its GUI functionality, can provide simultaneous data input and visualization. While Octave also supports GUI elements, it isn't as easy to use or modify as Excel. Additionally, considering how long 
 
