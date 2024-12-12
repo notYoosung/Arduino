@@ -11,23 +11,22 @@ Write about your overall experiences in this class. Please submit a reflection d
 Section One
     Reflect on your experiences in this course. How have your views and assumptions about being an engineer changed (or been confirmed)? Describe experiences that you have had in this course that have either changed or confirmed your views about what engineering is or how engineering is done. 
 
-        I believe that being an engineer is a viable prospect, especially with the seemingly boundless range of 
+        I believe that being an engineer is a viable prospect, especially with the seemingly boundless range of applications. While this course has only been a touch into the wide range of careers and studies in engineering, it has offered me a look into what the field may be like. I particularly enjoyed developing projects and finding solutions to problem sets. For example, formatting interfaces or outputs to a client's needs gives an interesting case of interpreting restrictions. However unrelated the study of colonial history may be, it does bring to mind the conflicts between groups such as the Federalists and Democratic-Republicans. On one hand, anything not mentioned may or may not be disregarded. On the other hand, 
 
 
 Section Two
     Do you intend to continue to study engineering?
 
-        I may pursue engineering. It is a useful field for work, and it has practical uses. The biomedical engineering field seems prospective as it provides careers with practicality and interest. It's also a rapidly growing career with some projections predicting up to a 10% increase
+        I may pursue engineering. It is a useful field for work, and it has practical uses. The biomedical engineering field seems prospective as it provides careers with practicality and interest. It's also a rapidly growing career with some projections predicting up to a 10% increase in jobs. However, there are some considerations in which I may not 
 
     If you intend to continue to study engineering: Describe experiences you have had this semester that motivate you to continue studying engineering. What experiences are you looking forward to as an engineering student? Are you switching to a different engineering major? If yes—what experiences have motivated this choice? If you plan to remain in the same major, what experiences have motivated this choice?
 
-        This semester has shown quite a few ways in which data can be used. 
+        This semester has shown quite a few ways in which data can be used. Biomedical engineering interests me because of its bountiful field of knowledge and application. It also provides a gateway for me to branch off into other fields, particularly those in engineering and medicine, in the case that I find a better course for the future.
 
 
     If you do not intend to continue to study engineering:  What major are you now exploring? Describe any experiences (in this class, in other classes, or outside of class) that you have had this semester that motivated you to explore a different major. How might your experiences from this semester help you on your new path?
 
-        While engineering  This semester has given quite a bit of experience in working with spreadsheets and utilities like Octave and Arduinos. This 
-
+        This semester has given quite a bit of experience in working with utilities such as Excel, Octave, and Arduinos. Excel is an almost universal tool in professional and even casual workspaces, and several skills such as applying pivot tables or Excel scripts. With pivot tables, large datasets can be compared, processed, modified, and displayed with efficiency, accuracy, and ease. Excel scripts are useful for automation, which is key for efficiency. Whether it be for formatting, workplace setup, or data management, the scripts can be invaluable for consistently producing faster and more accurate results than competitors without such skills.
 
 
 Section Three
